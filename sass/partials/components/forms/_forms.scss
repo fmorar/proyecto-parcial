@@ -1,0 +1,50 @@
+//
+// Global forms
+//
+
+
+select {
+  @include font-size(12);
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  @include font-size(12);
+  border-radius: 3px;
+  border: solid #e1e1e1 1px;
+  background: #fff;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  @include media(min-width 767px) {
+    max-width: 300px;
+  }
+}
+input[type="checkbox"],
+input[type="radio"] {
+  @include font-size(16);
+  vertical-align: baseline;
+}
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+  padding: 8px 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  @include media(min-width 767px) {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+     -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
