@@ -1,0 +1,116 @@
+/*
+ * Style for elements page product-detail
+ */
+
+.authority-description {
+	@include span-columns(12);
+	margin-bottom: 5px;
+	padding-top: 5px;
+
+	h2{
+		margin-top: 15px;
+	}
+
+	@media (min-width: 740px) {
+		@include shift(6);
+		h2{
+			@include span-columns(6);
+		}
+	}
+
+}
+
+.author-name {
+  font-weight: normal;
+}
+
+.basic-info {
+	clear: both;
+	span{
+		font-weight: bold;
+	}
+
+	@media (min-width: 740px) {
+		clear: right;
+		@include span-columns(6);
+		padding-top: 15px;
+	}
+}
+
+.cover {
+	@include span-columns(12);
+
+	@media (min-width: 740px) {
+		@include span-columns(12);
+		img{
+			display: block;
+			margin: 0 auto;
+			width: 75%;
+		}
+	}
+}
+
+.description {
+	margin: 30px 0 30px;
+}
+
+.images-book {
+	margin: 10px 0;
+
+	@media (min-width: 740px) {
+		@include span-columns(6);
+		overflow: hidden;
+	}
+}
+
+.more-images {
+	@include span-columns(12);
+	img {
+		vertical-align: top;
+			width: 100px;
+	}
+
+	li {
+		display: inline-block;
+		@include span-columns(4);
+	}
+}
+
+.price {
+  color: $color1;
+  @include font-size(25);
+}
+
+.product-details {
+	overflow: hidden;
+	padding: 80px 5px 40px;
+}
+
+.review-book {
+	clear: both;
+}
+
+.stars-ranking {
+
+	margin: 10px 15px 20px 0;
+	img {
+		display: inline;
+		height:auto;
+		width: 18px;
+	}
+}
+
+.video-book {
+	background: $color2;
+	color: $color3;
+	padding: 40px 0;
+
+	iframe {
+		display: block;
+		margin: 0 auto;
+		@include media(min-width 320px max-width 480px, 6) {
+	     @include span-columns(6);
+	   }
+	}
+}
+

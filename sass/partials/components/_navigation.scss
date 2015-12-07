@@ -1,3 +1,165 @@
-.main-nav{
-	float: right;
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; }
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li, li a {
+  color: $color3;
+  font-weight: normal;
+  webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+nav ul li:hover,
+li a:hover {
+  font-weight: bold;
+  webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main-nav {
+  @include font-size(20);
+  float: right;
+  line-height: 80px;
+
+  @media (min-width: 740px) {
+      @include font-size(20);
+      line-height: normal;
+      margin-top: 16px;
+      text-align: center;
+  }
+
+  @media (min-width: 740px) {
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+.main-nav li {
+  display: none;
+  padding: 10px 5px;
+
+  @media (min-width: 740px) {
+    display: inline-block;
+  }
+}
+
+/*
+  **DROP-DOWN WORKS
+*/
+.main-nav li:nth-child(2):after {
+  @include font-size(14);
+  content: '\25bc'; }
+
+.drop-down {
+  background: rgba(216, 109, 50, 0.9);
+  display: none;
+  text-align: left;
+  width: 100%;
+
+  @media (min-width: 740px) {
+    margin-top: 10px !important;
+    position: absolute;
+    width: 200px;
+  }
+}
+
+
+.drop-down li {
+  border-left: 5px solid transparent;
+  display: block;
+  margin: 0;
+  padding: 20px 15px;
+
+  &:hover {
+    border-left: 5px solid #43A6B9;
+  }
+
+  &:hover a {
+      text-decoration: none;
+  }
+}
+
+.extendedWorks {
+  display: block;
+}
+
+/*
+  **MENU COLLAPSE
+*/
+.menu-collapse {
+  float: right;
+  overflow: hidden;
+  margin: 7px 10px;
+
+  @media (min-width: 740px) {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.on .two {
+  opacity: 0;
+}
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  background: $color3;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  height: 5px;
+  margin: 6px 0;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 100%;
+}
+
+.extended {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  li {
+    display: block;
+  }
+
+}
+
+.overlay {
+  background: #43A6B9;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 15;
 }

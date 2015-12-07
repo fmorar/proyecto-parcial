@@ -3,113 +3,205 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tienda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<div class="max-content">
-			<h1 class="logo">logo</h1>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Categorias</a>
-						<ul>
-							<li><a href="#">Categoria-1</a></li>
-							<li><a href="#">Categoria-2</a></li>
-							<li><a href="#">Categoria-3</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
+		<div class="top-header">
+			<div class="max-content">
+				<h1 class="logo">BookStore</h1>			
+				<div class="menu-collapse">
+					<div class="menu-toggle">
+					    <div class="one"></div>
+					    <div class="two"></div>
+					    <div class="three"></div>
+					</div>	
+				</div><!--END MENU COLLAPSE-->
+
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Categories</a>
+							<ul class="drop-down">
+								<li><a href="#">Category-1</a></li>
+								<li><a href="#">Category-2</a></li>
+								<li><a href="#">Category-3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>		
 	</header>
 
 	<section class="product-details">
-
 		<div class="authority-description">
-			<span>Categoria</span>
-			<h2>Title book</h2>
-			<span class="author-name">by Lorem</span>
-		</div>
+				<h4>Design/Graphic Design</h4>
+				<h2>Palette No.4: Neon, New Fluorescent Graphics</h2>
+				<span class="author-name">por victionary</span>
+			</div>
+		<div class="max-content">
+			<div class="images-book">
+				<div class="cover">
+					<img src="img/book-images/book-front.jpg" alt="">
+				</div>
+				
+				<ul class="more-images">
+					<li><img src="img/book-images/book-front.jpg" alt=""></li>
+					<li><img src="img/book-images/inside.jpg" alt=""></li>	
+					<li><img src="img/book-images/inside-2.jpg" alt=""></li>
+				</ul>
+			</div>
+			
+			<div class="basic-info">
+				
 
-		<div class="images-book">
-			<img src="img/download.png" alt="">
-			<ul class="more-images">
-				<li><img src="img/download.png" alt=""></li>
-				<li><img src="img/download.png" alt=""></li>
-				<li><img src="img/download.png" alt=""></li>
-			</ul>
-		</div>
-		
-		<div>
-			<h3>Fabricante</h3>
-			<h3>Precio</h3>
-		</div>
+				<p><span>Price: </span><span class="price">$10</span></p>
+				<p><span>Publisher: </span>victionary (1 octubre 2013)</p>
+				
+			
+				<div class="stars-ranking">
+					<img src="img/star-fill.png" alt="">
+					<img src="img/star-fill.png" alt="">
+					<img src="img/star-fill.png" alt="">
+					<img src="img/star-empty.png" alt="">
+					<img src="img/star-empty.png" alt="">
+				</div>
 
-		<div class="stars-ranking">
-			<img src="img/download.png" alt="">
-			<img src="img/download.png" alt="">
-			<img src="img/download.png" alt="">
-			<img src="img/download.png" alt="">
-			<img src="img/download.png" alt="">
-		</div>
+				<a class="btn btn-add">Add to cart</a>
 
-		<div class="latest-comment">
-			<img src="img/download.png" alt="">
-			<h4>Name del mae</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error suscipit, aut quam? Commodi quae, eum recusandae veritatis necessitatibus perferendis quia nihil voluptates quo nobis qui natus ad nisi quis.</p>
-		</div>
+				<div class="description">
+					<h4>Descripción</h4>
+					<p>The most recent of publisher viction:ary‘s Palette series – Palette No.4: Neon, New Fluorescent Graphics – is looking at what are commonly called the neon colours – those shocking pinks, greens and yellows that grab the attention thanks to some special properties to do with light wavelength absorption.</p>
+
+					<p> This 296-page book, you’ll probably be glad to hear, is light-to-non-existent on the physics equations and heavy on the applications of fluorescent colours in the design world. Why else would we be telling you about it?</p>
+				</div>
+				
+
+				<div class="comment latest-comment">
+					<h4>Latest comment</h4>
+					<div>
+						<img src="img/perfil.jpg" alt="" class="img-perfil">
+						<p>Elisa karina</p>
+						<div class="stars-ranking">
+							<img src="img/star-fill.png" alt="">
+							<img src="img/star-fill.png" alt="">
+							<img src="img/star-fill.png" alt="">
+							<img src="img/star-fill.png" alt="">
+							<img src="img/star-empty.png" alt="">
+						</div>
+					</div>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error suscipit, aut quam? Commodi quae, eum recusandae veritatis necessitatibus perferendis quia nihil voluptates quo nobis qui natus ad nisi quis.</p>
+				</div>
+			</div>
+
+		</div>	
 				
 	</section><!--END PRODUCT-DETAILS-->
 
-	<section class="review-book">
-		<h3>Description</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem sequi recusandae doloribus possimus molestias debitis reiciendis. Non laudantium ab repellendus nisi tempora consequuntur accusantium sit, cupiditate quo, illum quam.</p>
+	<section class="video-book">
+		<div class="max-content">
+			<h4>See a example</h4>
+			<div class="video-description">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/rV58X90TC7k?list=PL2RgopUQI3fbaQBhnwcbFMtcr5LkEyv4i" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>		
 	</section><!--END REVIEW-BOOK-->
 
+	
+	
 	<section class="related-products">
-		<ul>
-			<li>
-				<img src="img/download.png" alt="">
-				<h4>Nombre libro</h4>
-			</li>
-			<li>
-				<img src="img/download.png" alt="">
-				<h4>Nombre libro</h4>
-			</li>
-			<li>
-				<img src="img/download.png" alt="">
-				<h4>Nombre libro</h4>
-			</li>
-		</ul>
+		<div class="max-content">
+			<h4>Related Products</h4>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/book-images/related/relatedBook.png" alt="">
+						<h5>Graphic Alive 2</h5>
+						<p>Price: <span class="price">$90</span></p>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/book-images/related/relatedBook-2.jpg" alt="">
+						<h5>Logo Design Love</h5>
+						<p>Price: <span class="price">$139</span></p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/book-images/related/relatedBook-3.jpg" alt="">
+						<h5>Graphic Design Solutions</h5>
+						<p>Price: <span class="price">$169</span></p>
+					</a>				
+				</li>
+			</ul>
+		</div>
+		
 	</section><!--END RELATED PRODUCTS-->
 
-	<section class="">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/9fL5iWgWwno" frameborder="0" allowfullscreen></iframe>
-	</section>
+	<section class="all-comments">
+		<div class="max-content">
+		<h4>Comentarios de clientes</h4>
+			<div class="comment">
+				<div>
+					<img src="img/perfil.jpg" alt="" class="img-perfil">
+					<p>Elisa karina</p>
+					<div class="stars-ranking">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-empty.png" alt="">
+					</div>
+				</div>
+					
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error suscipit, aut quam? Commodi quae, eum recusandae veritatis necessitatibus perferendis quia nihil voluptates quo nobis qui natus ad nisi quis.</p>
+			</div>
+		
+			<div class="comment">
+				<div>
+					<img src="img/perfil.jpg" alt="" class="img-perfil">
+					<p>Elisa karina</p>
+					<div class="stars-ranking">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-empty.png" alt="">
+					</div>
+				</div>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error suscipit, aut quam? Commodi quae, eum recusandae veritatis necessitatibus perferendis quia nihil voluptates quo nobis qui natus ad nisi quis.</p>
+			</div>
 
-	<section class="commets">
-		<div>
-			<img src="img/download.png" alt="">
-			<h4>Name del mae</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem sequi recusandae doloribus possimus molestias debitis reiciendis. Non laudantium ab repellendus nisi tempora consequuntur accusantium sit, cupiditate quo, illum quam.</p>
-		</div>
-		<div>
-			<img src="img/download.png" alt="">
-			<h4>Name del mae</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem sequi recusandae doloribus possimus molestias debitis reiciendis. Non laudantium ab repellendus nisi tempora consequuntur accusantium sit, cupiditate quo, illum quam.</p>
-		</div>
-		<div>
-			<img src="img/download.png" alt="">
-			<h4>Name del mae</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem sequi recusandae doloribus possimus molestias debitis reiciendis. Non laudantium ab repellendus nisi tempora consequuntur accusantium sit, cupiditate quo, illum quam.</p>
-		</div>
+			<div class="comment">
+				<div>
+					<img src="img/perfil.jpg" alt="" class="img-perfil">
+					<p>Elisa karina</p>
+					<div class="stars-ranking">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-fill.png" alt="">
+						<img src="img/star-empty.png" alt="">
+					</div>
+				</div>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error suscipit, aut quam? Commodi quae, eum recusandae veritatis necessitatibus perferendis quia nihil voluptates quo nobis qui natus ad nisi quis.</p>
+			</div>
+		</div>			
 	</section><!--END COMMENTS-->
 
 	<footer>
 		<p>Copyright 2015</p>
 	</footer>
 	
+<script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>

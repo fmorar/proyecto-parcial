@@ -1,0 +1,50 @@
+/*
+ * Style for related products
+ */
+.related-products {
+	height: 300px;
+  	padding: 40px 5px;
+
+  	a:hover {
+  		font-weight:normal;
+  		h5 {
+			text-decoration: underline;
+  		}
+  	}
+
+	h4 {
+		margin-bottom:20px;
+	}
+
+	h5 {
+		color: $color2;
+	}
+
+  	img {
+  		height: 100%;
+  		width: 80px;
+  	}
+
+	li {
+		cursor: pointer;
+		display: inline-block;
+		@include span-columns(4);
+		height: 100px;
+	}
+
+	.price {
+		@include font-size(20);
+	}
+}
+
+.related-products ul {
+	@media (min-width: 740px) {
+		margin: 0 auto;
+		width: 75%;
+
+		img {
+			height: auto;
+			width: 110px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.logo {
+	color: $color3;
+	float: left;
+	@include font-size(28);
+	margin: 20px 0 0 7px;
+}
+
+.top-header {
+	background: $color1;
+	box-shadow: 0 -4px 20px $color1;
+	height: 70px;
+	position: fixed;
+	@include span-columns(12);
+}
